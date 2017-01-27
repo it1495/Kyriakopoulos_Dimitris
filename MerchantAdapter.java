@@ -38,7 +38,7 @@ public class MerchantAdapter extends ArrayAdapter<Merchant> {
 
         if(rowView == null){
             LayoutInflater inflater = (LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            rowView = inflater.inflate(R.layout.list_item_merchant, null);
+            rowView = inflater.inflate(R.layout.list_item_merchant,parent, false);
             viewHolder = new ViewHolder(rowView);
             rowView.setTag(viewHolder);
         }
